@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spring Flowers School</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            background-color: #FFE4B2; /* Light orange color */
+        }
+        .student-photo img {
+            max-width: 200px; /* Adjust the maximum width as needed */
+            height: auto;
+            display: block;
+            margin: 0 ; /* Center the image horizontally */
+        }
+        .student-info {
+            text-align: center;
+            margin-top: 20px; /* Add margin to separate student info from photo */
+        }
+        .welcome-section {
+            text-align: center;
+            padding: 100px 0;
+        }
+        .welcome-section h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        .welcome-section p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+        .section {
+            display: none;
+        }
+        .logo {
+            margin-bottom: 50px; /* Add margin below the logo */
+        }
+        .logo img {
+            max-width: 100px; /* Increase the size of the logo */
+            height: auto;
+        }
+        main {
+            margin-top: 10px; /* Add margin at the top of the main content */
+        }
+        .student-details {
+            text-align: center;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Spring Flowers School</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#studentProfile">Student Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#timetable">TimeTable</a> <!-- Updated TimeTable button -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button id="monthly-chart-btn" class="nav-link">Monthly Chart</button>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="logo">
+            <img src="school_logo2.jpeg" alt="School Logo" align="left" class="img-fluid">
+        </div>
+    </header>
+    <main>
+        <section class="section" id="home" style="display: block;">
+            <div class="container welcome-section">
+                <h2>Welcome to Spring Flowers School</h2>
+                <br>
+                <p>Hello Students! Welcome to our school website. We are delighted to have you here.</p>
+                <p>Feel free to explore the information about our school, student profiles, and contact details.</p>
+            </div>
+        </section>
+        <section align="center" class="section" id="about">
+            <div class="container">
+                <br>
+                <h2>About Spring Flowers School</h2>
+                <br>
+                <p>Spring Flowers School is a vibrant educational institution dedicated to nurturing young minds and fostering holistic development. <br>Located in the heart of Machilipatnam, our school is committed to providing a stimulating learning environment where students can thrive academically, socially, and emotionally. <br>With a focus on creativity, critical thinking, and character building, we empower our students to become confident, compassionate, and responsible individuals prepared to contribute positively to society.</p>
+            </div>
+        </section>
+        <section class="student-details section" id="studentProfile">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="student-photo">
+                            <img src="student_photo.jpg" alt="Student Photo" class="img-fluid">
+                        </div>
+                        <div class="student-info">
+                            <h2>Anand Manda</h2>
+                            <br>
+                            <p>Class      : 10th Grade</p>
+                            <p>Roll Number: 123456</p>
+                            <p>DOB        : January 1, 2005</p>
+                            <p>Address    : YSR colony, Machilipatnam, Andhra Pradesh, India</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section" id="timetable"> <!-- TimeTable section -->
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-12">
+                        <h2>Time Table</h2>
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>Day</th>
+                                    <th>Time</th>
+                                    <th>Subject</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Monday</td>
+                                    <td>9:00 AM - 10:00 AM<br>10:00AM-11:00AM<br>11:00AM-12:00PM<br>12:00PM-1:00PM<br>2:00PM-3:00PM<br>3:00PM-4:00PM</td>
+                                    <td>Mathematics<br>science<br>social<br>English<br>Hindi<br>Computers</td>
+                                </tr>
+                                <tr>
+                                    <td>Tuesday</td>
+                                    <td>9:00 AM - 10:00 AM<br>10:00AM-11:00AM<br>11:00AM-12:00PM<br>12:00PM-1:00PM<br>2:00PM-3:00PM<br>3:00PM-4:00PM</td>
+                                    <td>Mathematics<br>science<br>social<br>English<br>Hindi<br>Computers</td>
+                                </tr>
+                                <tr>
+                                    <td>Wednesday</td>
+                                    <td>9:00 AM - 10:00 AM<br>10:00AM-11:00AM<br>11:00AM-12:00PM<br>12:00PM-1:00PM<br>2:00PM-3:00PM<br>3:00PM-4:00PM</td>
+                                    <td>Mathematics<br>science<br>social<br>English<br>Hindi<br>Computers</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Thursday</td>
+                                    <td>9:00 AM - 10:00 AM<br>10:00AM-11:00AM<br>11:00AM-12:00PM<br>12:00PM-1:00PM<br>2:00PM-3:00PM<br>3:00PM-4:00PM</td>
+                                    <td>Mathematics<br>science<br>social<br>English<br>Hindi<br>Computers</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Friday</td>
+                                    <td>9:00 AM - 10:00 AM<br>10:00AM-11:00AM<br>11:00AM-12:00PM<br>12:00PM-1:00PM<br>2:00PM-3:00PM<br>3:00PM-4:00PM</td>
+                                    <td>Mathematics<br>science<br>social<br>English<br>Hindi<br>Computers</td>
+                                </tr>
+
+                                <tr>
+                                    <td>Saturday</td>
+                                    <td>9:00 AM - 10:00 AM<br>10:00AM-11:00AM<br>11:00AM-12:00PM<br>12:00PM-1:00PM<br>2:00PM-3:00PM<br>3:00PM-4:00PM</td>
+                                    <td>Mathematics<br>science<br>social<br>English<br>Hindi<br>Computers</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section align="center" class="section" id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <br>
+                <p>School Name : Spring Flowers School</p>
+                <p>Address : Port Road, Machilipatnam, AP, 521001</p>
+                <p>Phone Number : +914145415754</p>
+                <p>Email : springflowerschool@gmail.com</p>
+                <br>
+                <p>Feel Free to contact ! in working Hours</p>
+            </div>
+        </section>
+        
+        <section align="center" class="section" id="monthly-activity-page" style="display: none;">
+            <h2>Monthly Activity</h2>
+            <div id="activity-list">
+                <!-- Content for each subject will be displayed here based on selection -->
+            </div>
+            <br>
+            <select id="subject-dropdown">
+                <option value="Maths">Maths</option>
+                <option value="Science">Science</option>
+                <option value="English">English</option>
+                <!-- Add more subjects here -->
+            </select>
+        </section>
+        
+    </main>
+    <script src="script2.js"></script>
+
+</body>
+</html>
